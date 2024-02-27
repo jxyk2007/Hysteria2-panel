@@ -15,6 +15,7 @@ cp  hysteria2.service /etc/systemd/system/
 
 # 创建服务
 ===============================================
+```
 sudo vi /etc/systemd/system/hysteria2.service
 
 [Unit]
@@ -28,9 +29,9 @@ Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
-
+```
 ===================================================
-
+```
 sudo systemctl daemon-reload
 sudo systemctl enable hysteria2
 sudo systemctl start hysteria2
@@ -40,8 +41,9 @@ netstat -luntp |grep hysteria
 
 sudo systemctl stop hysteria2
 netstat -luntp |grep hysteria
+```
 # config.yaml 配置  可参考官方文档
-'''python
+```python
 auth:
   type: userpass
   userpass:
@@ -56,7 +58,7 @@ masquerade:
 tls:
   cert: /root/hyst*****马赛克******eria2/csdn.crt
   key: /root/hyst*****马赛克******eria2/csdn.key'
-'''
+```
 
 # 启动面板 Python3 app.py 
 详细教程https://blog.csdn.net/jxyk2007/article/details/136184241?utm_source%20=%20uc_fansmsg
