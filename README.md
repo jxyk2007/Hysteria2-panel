@@ -41,7 +41,8 @@ netstat -luntp |grep hysteria
 sudo systemctl stop hysteria2
 netstat -luntp |grep hysteria
 # config.yaml 配置  可参考官方文档
-'auth:
+'''python
+auth:
   type: userpass
   userpass:
     csdn: csdn
@@ -55,7 +56,7 @@ masquerade:
 tls:
   cert: /root/hyst*****马赛克******eria2/csdn.crt
   key: /root/hyst*****马赛克******eria2/csdn.key'
-
+'''
 
 # 启动面板 Python3 app.py 
-
+详细教程https://blog.csdn.net/jxyk2007/article/details/136184241?utm_source%20=%20uc_fansmsg
