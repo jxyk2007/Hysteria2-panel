@@ -3,6 +3,7 @@ Hysteria2服务端管理面板
 # 申请免费eu.org域名，并申请证书
 
 # Hysteria2 安装
+```
 sudo mkdir /root/hysteria2
 sudo cp config.yaml /root/hysteria2/
 sudo cp hysteria-linux-amd64 /root/hysteria2/
@@ -12,7 +13,7 @@ cd /root/hysteria2
 sudo chmod +x hysteria-linux-amd64
 
 cp  hysteria2.service /etc/systemd/system/
-
+```
 # 创建服务
 ===============================================
 ```
